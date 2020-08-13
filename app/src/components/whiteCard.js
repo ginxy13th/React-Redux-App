@@ -8,7 +8,7 @@ const WhiteCard = props => {
             <div className='whiteCard'>
                 <p className='quote'>{props.quote}</p>
                 <h4>-Ron Swanson</h4>
-                <p className='bottomtag'>CARDS AGAINST BREAKING SWANSON - Breaking Bad</p>
+                <p className='bottomtag'>CARDS AGAINST BREAKING SWANSON - Ron Swanson</p>
             </div>
         </div>
     )
