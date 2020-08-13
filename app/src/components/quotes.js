@@ -7,15 +7,15 @@ const Quotes = (props) => {
     useEffect(() => {
         props.findingQuotes();
     }, []);
-
+ 
     return (
         <section>
-            <h1>CARDS AGAINST THE OFFICE APPRENTICE</h1>
-            {props.isLoading ? <h4>We're Working, please don't fire us!</h4> : null}
+            <h1>CARDS AGAINST BREAKING SWANSON</h1>
+            {props.isLoading ? <h4>We're shuffling the Deck!</h4> : null}
             {props.error ? (<p>Something happened, and it wasn't the right thing. {props.error}</p>) : null}
             <QuoteCard 
-            trumpQuotes={props.trumpQuotes}
-            ronQuotes={props.ronQuotes}
+            breakingQuotes={props.breakingQuotes}
+            ronQuotes={props.ronSwansonQuotes}
             />
         </section>
     )
@@ -23,8 +23,8 @@ const Quotes = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        trumpQuotes: state.trumpQuotes,
-        ronSwansonQuotes: state.ronSwansonQuotes,
+        breakingQuotes: state.breakingQuotes || [],
+        ronSwansonQuotes: state.ronSwansonQuotes || [],
         isLoading: state.isLoading,
         error: state.error
     }

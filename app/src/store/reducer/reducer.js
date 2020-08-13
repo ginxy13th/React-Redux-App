@@ -1,7 +1,7 @@
 import { FINDING_QUOTES_START, SUCCESSFUL_FIND } from '../actions/actions'
 
 export const initialState = {
-    trumpQuotes: [],
+    breakingQuotes: [],
     ronSwansonQuotes: [],
     isLoading: false,
     error: ''
@@ -19,11 +19,11 @@ export const reducer = (state = initialState, action) => {
             };
         
         case SUCCESSFUL_FIND:
-            console.log("IN ACTION2")
+            console.log('REDUCER', action.payloadtwo)
             return {
                 ...state,
                 isLoading: false,
-                trumpQuotes: action.payloadone,
+                breakingQuotes: action.payloadone,
                 ronSwansonQuotes: action.payloadtwo,
                 error: ''
             }

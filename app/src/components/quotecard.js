@@ -1,20 +1,21 @@
 import React from 'react';
+import BlackCard from './blackCard';
+import WhiteCard from './whiteCard';
+
 
 const QuoteCard = (props) => {
-    const randomQuote = props => {
-        if (props.ronQuotes.length > 0) {
-            props.ronQuotes[Math.floor(Math.random() * props.ronQuotes.length)]
-       }}
+    console.log(props)
     return (
-        <div className='card'>
-            <div className='whiteCard'>
-                <p>{props.trumpQuotes}</p>
-                <h4>-Trump</h4>
+        <div>
+            <div   className='blackContainer'>
+            {props.breakingQuotes.map(item => (
+            <BlackCard key={item.id} quote={item.quote} author={item.author} />
+          ))}
             </div>
-            <div className='blackCard'>
-                {console.log(randomQuote)}
-                {randomQuote}
-                <h4>-Ron Swanson</h4>
+            <div className='whiteContainer'>
+                {props.ronQuotes.map(item => (
+                    <WhiteCard key={item.id} quote={item} />
+                ))}
             </div>
         </div>
     )
