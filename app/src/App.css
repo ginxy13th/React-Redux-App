@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+.blackBigContainer {
+  border: 5px solid black;
+  margin:5px;
+  border-radius: 10%;
+}
+.blackContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width:100%;
+  /* border: 2px gray solid; */
+}
+.blackCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  justify-items: flex-end;
+  align-content: stretch;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  height: 300px;
+  width: 200px;
+}
+.bottomtag {
+  font-size: .5rem;;
+}
+.quote {
+  font-size: 1rem;;
+}
+.whiteBigContainer {
+  border: 5px solid black;
+  margin:5px;
+  border-radius: 10%;
+}
+
+.whiteContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width:100%;
+  /* border: 2px gray solid; */
+}
+.whiteCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  justify-items: flex-end;
+  align-content: stretch;
+  border: 10px, solid, black;
+  margin: 5px;
+  height: 300px;
+  width: 200px;
+  
+}
